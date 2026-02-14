@@ -4,7 +4,7 @@ A professional, responsive pharmacy website built with HTML, CSS, and JavaScript
 
 ## 🌐 Live Demo
 
-[MediCare Pharmacy](https://haroonrashidzadran.github.io/Pharamcy-Website/)
+[MediCare Pharmacy](https://haroonrashidzadran.github.io/Pharamacy-Website/)
 
 ---
 
