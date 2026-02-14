@@ -74,52 +74,53 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h4>Get In Touch</h4>
-                    <h2>We'd Love to Hear From You</h2>
-                    <p>Have questions about your medications, need a prescription refill, or want to learn more about our services? Reach out to us today.</p>
+            <div class="contact-wrapper">
+                <!-- Contact Info Card -->
+                <div class="contact-info-card">
+                    <div class="contact-header">
+                        <h4>Get In Touch</h4>
+                        <h2>We'd Love to Hear From You</h2>
+                        <p>Have questions about your medications, need a prescription refill, or want to learn more about our services? Reach out to us today.</p>
+                    </div>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                    <div class="contact-info-grid">
+                        <div class="info-item">
+                            <div class="info-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="contact-text">
+                            <div class="info-content">
                                 <h5>Our Location</h5>
                                 <p>123 Main Street, Kabul, Afghanistan</p>
                             </div>
                         </div>
                         
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div class="info-item">
+                            <div class="info-icon">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
-                            <div class="contact-text">
+                            <div class="info-content">
                                 <h5>Phone Number</h5>
                                 <p>+93 789 123 456</p>
                             </div>
                         </div>
                         
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div class="info-item">
+                            <div class="info-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="contact-text">
+                            <div class="info-content">
                                 <h5>Email Address</h5>
                                 <p>info@medicare-pharmacy.com</p>
                             </div>
                         </div>
                         
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div class="info-item">
+                            <div class="info-icon">
                                 <i class="fas fa-clock"></i>
                             </div>
-                            <div class="contact-text">
+                            <div class="info-content">
                                 <h5>Working Hours</h5>
-                                <p>Mon - Sat: 8:00 AM - 9:00 PM</p>
-                                <p>Sunday: 10:00 AM - 6:00 PM</p>
+                                <p>Mon - Sat: 8:00 AM - 9:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
                             </div>
                         </div>
                     </div>
@@ -127,36 +128,40 @@
                     <div class="contact-social">
                         <h5>Follow Us</h5>
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-youtube"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <h4>Send Us a Message</h4>
+                <!-- Contact Form Card -->
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <h4>Send Us a Message</h4>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+                    
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Your Name</label>
+                                <label for="name"><i class="fas fa-user"></i> Your Name</label>
                                 <input type="text" id="name" name="name" placeholder="John Doe" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email Address</label>
+                                <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
                                 <input type="email" id="email" name="email" placeholder="john@example.com" required>
                             </div>
                         </div>
                         
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="phone">Phone Number</label>
+                                <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
                                 <input type="tel" id="phone" name="phone" placeholder="+93 700 000 000">
                             </div>
                             <div class="form-group">
-                                <label for="subject">Subject</label>
+                                <label for="subject"><i class="fas fa-tag"></i> Subject</label>
                                 <select id="subject" name="subject" required>
                                     <option value="">Select a subject</option>
                                     <option value="prescription">Prescription Inquiry</option>
@@ -168,12 +173,14 @@
                             </div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        <div class="form-group full-width">
+                            <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
                 </div>
             </div>
