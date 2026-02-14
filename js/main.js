@@ -408,11 +408,150 @@ function filterProducts(category) {
     });
 }
 
+// Newsletter subscription (for future use)
+function setupNewsletter() {
+    const newsletterForms = document.querySelectorAll('.newsletter-form');
+    
+    newsletterForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            if (email && email.includes('@')) {
+                showNotification('Thank you for subscribing!');
+                this.reset();
+            } else {
+                showNotification('Please enter a valid email address');
+            }
+        });
+    });
+}
+
+// Back to top button functionality
+function setupBackToTop() {
+    const backToTop = document.querySelector('.back-to-top');
+    
+    if (!backToTop) {
+        const btn = document.createElement('button');
+        btn.className = 'back-to-top';
+        btn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        btn.setAttribute('aria-label', 'Back to top');
+        btn.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        `;
+        
+        document.body.appendChild(btn);
+        
+        btn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                btn.style.opacity = '1';
+                btn.style.visibility = 'visible';
+            } else {
+                btn.style.opacity = '0';
+                btn.style.visibility = 'hidden';
+            }
+        });
+    }
+}
+
+// Lazy loading for images
+function setupLazyLoading() {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                    }
+                    img.classList.add('loaded');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        
+        images.forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+}
+
+// Cookie consent banner (for future GDPR compliance)
+function setupCookieConsent() {
+    if (!localStorage.getItem('cookieConsent')) {
+        const consent = document.createElement('div');
+        consent.className = 'cookie-consent';
+        consent.innerHTML = `
+            <p>We use cookies to improve your experience. By continuing to visit this site you agree to our use of cookies.
+            <a href="#">Learn more</a></p>
+            <button class="accept-cookies">Accept</button>
+        `;
+        consent.style.cssText = `
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            z-index: 10000;
+        `;
+        
+        const acceptBtn = consent.querySelector('.accept-cookies');
+        acceptBtn.style.cssText = `
+            padding: 10px 25px;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        `;
+        
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'true');
+            consent.remove();
+        });
+        
+        document.body.appendChild(consent);
+    }
+}
+
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
     loadCart();
     initEventListeners();
     setupScrollAnimations();
+    setupNewsletter();
+    setupBackToTop();
+    setupLazyLoading();
+    setupCookieConsent();
     handleScroll();
     
     console.log('MediCare Pharmacy website loaded successfully');
