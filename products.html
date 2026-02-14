@@ -21,9 +21,9 @@
                     <span><i class="fas fa-envelope"></i> info@medicare-pharmacy.com</span>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     <i class="fas fa-heartbeat"></i>
                     <span>Medi<span class="highlight">Care</span></span>
                 </a>
-                <button class="nav-toggle" aria-label="Toggle navigation">
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav-menu">
@@ -48,8 +48,10 @@
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="header-actions">
-                    <button class="search-btn"><i class="fas fa-search"></i></button>
-                    <button class="cart-btn">
+                    <button class="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" aria-label="Shopping Cart">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count">0</span>
                     </button>
@@ -59,21 +61,37 @@
         </div>
     </header>
 
-    <!-- Page Banner -->
-    <section class="page-banner">
+    <!-- Products Page Header -->
+    <section class="products-page-header">
         <div class="container">
             <h1>Our Products</h1>
-            <nav class="page-breadcrumb" aria-label="Breadcrumb navigation">
-                <a href="index.html">Home</a>
-                <span>/</span>
-                <span>Products</span>
-            </nav>
+            <p>Discover our wide range of quality healthcare products at competitive prices</p>
         </div>
     </section>
 
     <!-- Products Section -->
     <section class="products-page">
-        <div class="container">
+        <div class="products-container">
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Products Available</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Customer Support</span>
+                </div>
+            </div>
+            
             <!-- Category Filter -->
             <div class="product-filter">
                 <button class="filter-btn active" data-filter="all">All Products</button>
@@ -87,142 +105,283 @@
             <div class="products-grid">
                 <!-- Product 1 -->
                 <article class="product-card" data-category="vitamins">
-                    <div class="product-badge">Sale</div>
+                    <div class="product-badge sale">Sale -20%</div>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&h=200&fit=crop" alt="Vitamin D3 Supplements">
                     </div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(45)</span>
+                        </div>
+                        <div class="stock-status in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
                         <span class="product-category">Vitamins</span>
                         <h3>Vitamin D3 2000 IU - 90 Softgels</h3>
                         <p>Essential vitamin for bone health and immune support</p>
-                        <div class="product-price">
-                            <span class="current-price">$12.99</span>
-                            <span class="original-price">$15.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$12.99</span>
+                                <span class="original-price">$15.99</span>
+                            </div>
+                            <span class="discount-badge">-20%</span>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
 
                 <!-- Product 2 -->
                 <article class="product-card" data-category="personal-care">
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=300&h=200&fit=crop" alt="Hand Sanitizer">
                     </div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <div class="stock-status in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
                         <span class="product-category">Personal Care</span>
                         <h3>Hand Sanitizer 500ml - 70% Alcohol</h3>
                         <p>Kills 99.9% of germs, keeps hands clean</p>
-                        <div class="product-price">
-                            <span class="current-price">$8.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$8.99</span>
+                            </div>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
 
                 <!-- Product 3 -->
                 <article class="product-card" data-category="medical">
-                    <div class="product-badge">New</div>
+                    <div class="product-badge new">New</div>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1585435465945-bef9a86f8c8c?w=300&h=200&fit=crop" alt="Digital Blood Pressure Monitor">
                     </div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(32)</span>
+                        </div>
+                        <div class="stock-status in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
                         <span class="product-category">Medical Devices</span>
                         <h3>Digital Blood Pressure Monitor</h3>
                         <p>Automatic upper arm BP monitor with memory</p>
-                        <div class="product-price">
-                            <span class="current-price">$45.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$45.99</span>
+                            </div>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
 
                 <!-- Product 4 -->
                 <article class="product-card" data-category="supplements">
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1577401239170-897942555fb3?w=300&h=200&fit=crop" alt="Immunity Boost Formula">
                     </div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(67)</span>
+                        </div>
+                        <div class="stock-status low-stock">
+                            <i class="fas fa-exclamation-circle"></i> Low Stock
+                        </div>
                         <span class="product-category">Supplements</span>
                         <h3>Immunity Boost Formula - 60 Capsules</h3>
                         <p>Zinc, Vitamin C, and Elderberry extract</p>
-                        <div class="product-price">
-                            <span class="current-price">$19.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$19.99</span>
+                            </div>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
 
                 <!-- Product 5 -->
                 <article class="product-card" data-category="vitamins">
+                    <div class="product-badge hot">Hot</div>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1587854691158-2f8c2de8a31d?w=300&h=200&fit=crop" alt="Multivitamin Complex">
                     </div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(124)</span>
+                        </div>
+                        <div class="stock-status in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
                         <span class="product-category">Vitamins</span>
                         <h3>Multivitamin Complex - Men's Health</h3>
                         <p>Complete daily nutrition for men</p>
-                        <div class="product-price">
-                            <span class="current-price">$24.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$24.99</span>
+                            </div>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
 
                 <!-- Product 6 -->
                 <article class="product-card" data-category="personal-care">
+                    <div class="product-badge sale">Sale -25%</div>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=300&h=200&fit=crop" alt="Face Masks">
                     </div>
-                    <div class="product-badge">Sale</div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(203)</span>
+                        </div>
+                        <div class="stock-status in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
                         <span class="product-category">Personal Care</span>
                         <h3>Disposable Face Masks - 50 Pack</h3>
                         <p>3-ply protective masks, comfortable fit</p>
-                        <div class="product-price">
-                            <span class="current-price">$12.99</span>
-                            <span class="original-price">$16.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$12.99</span>
+                                <span class="original-price">$16.99</span>
+                            </div>
+                            <span class="discount-badge">-25%</span>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
 
                 <!-- Product 7 -->
                 <article class="product-card" data-category="medical">
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1585644198526-45be0f0cbef3?w=300&h=200&fit=crop" alt="Digital Thermometer">
                     </div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(78)</span>
+                        </div>
+                        <div class="stock-status in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
                         <span class="product-category">Medical Devices</span>
                         <h3>Digital Thermometer - Fast Reading</h3>
                         <p>Accurate temperature reading in 10 seconds</p>
-                        <div class="product-price">
-                            <span class="current-price">$15.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$15.99</span>
+                            </div>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
 
                 <!-- Product 8 -->
                 <article class="product-card" data-category="supplements">
-                    <div class="product-badge">New</div>
+                    <div class="product-badge new">New</div>
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1577392648658-bd8b2e9423e0?w=300&h=200&fit=crop" alt="Omega-3 Fish Oil">
                     </div>
+                    <button class="quick-view-btn">Quick View</button>
                     <div class="product-info">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+                        <div class="stock-status in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
                         <span class="product-category">Supplements</span>
                         <h3>Omega-3 Fish Oil - 1000mg - 90 Softgels</h3>
                         <p>Heart health and brain function support</p>
-                        <div class="product-price">
-                            <span class="current-price">$22.99</span>
+                        <div class="price-wrapper">
+                            <div class="price-info">
+                                <span class="current-price">$22.99</span>
+                            </div>
                         </div>
-                        <button class="btn-add-cart">Add to Cart</button>
+                        <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                     </div>
                 </article>
             </div>
-
-            <!-- Load More -->
+            
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+            
             <div class="load-more">
-                <button class="btn btn-outline">Load More Products</button>
+                <button class="btn btn-outline"><i class="fas fa-plus"></i> Load More Products</button>
             </div>
         </div>
     </section>
