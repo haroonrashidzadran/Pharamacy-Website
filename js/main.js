@@ -253,7 +253,7 @@ function setupScrollAnimations() {
     }, observerOptions);
     
     // Observe elements
-    document.querySelectorAll('.feature-card, .service-card, .product-card, .testimonial-card').forEach(el => {
+    document.querySelectorAll('.feature-card, .service-card, .product-card, .testimonial-card, .about-preview, .cta').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
