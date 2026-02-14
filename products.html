@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse quality healthcare products at MediCare Pharmacy - Vitamins, supplements, personal care, and medical devices.">
+    <title>Our Products - MediCare Pharmacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +93 789 123 456</span>
+                    <span><i class="fas fa-envelope"></i> info@medicare-pharmacy.com</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Medi<span class="highlight">Care</span></span>
+                </a>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Home / Products</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="vitamins">Vitamins</button>
+                <button class="filter-btn" data-filter="personal-care">Personal Care</button>
+                <button class="filter-btn" data-filter="medical">Medical Devices</button>
+                <button class="filter-btn" data-filter="supplements">Supplements</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card" data-category="vitamins">
+                    <div class="product-badge">Sale</div>
+                    <div class="product-image">
+                        <img src="images/product-1.jpg" alt="Vitamin D3 Supplements">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vitamins</span>
+                        <h3>Vitamin D3 2000 IU - 90 Softgels</h3>
+                        <p>Essential vitamin for bone health and immune support</p>
+                        <div class="product-price">
+                            <span class="current-price">$12.99</span>
+                            <span class="original-price">$15.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" data-category="personal-care">
+                    <div class="product-image">
+                        <img src="images/product-2.jpg" alt="Hand Sanitizer">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Personal Care</span>
+                        <h3>Hand Sanitizer 500ml - 70% Alcohol</h3>
+                        <p>Kills 99.9% of germs, keeps hands clean</p>
+                        <div class="product-price">
+                            <span class="current-price">$8.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" data-category="medical">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/product-3.jpg" alt="Digital Blood Pressure Monitor">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Medical Devices</span>
+                        <h3>Digital Blood Pressure Monitor</h3>
+                        <p>Automatic upper arm BP monitor with memory</p>
+                        <div class="product-price">
+                            <span class="current-price">$45.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" data-category="supplements">
+                    <div class="product-image">
+                        <img src="images/product-4.jpg" alt="Immunity Boost Formula">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Supplements</span>
+                        <h3>Immunity Boost Formula - 60 Capsules</h3>
+                        <p>Zinc, Vitamin C, and Elderberry extract</p>
+                        <div class="product-price">
+                            <span class="current-price">$19.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card" data-category="vitamins">
+                    <div class="product-image">
+                        <img src="images/product-5.jpg" alt="Multivitamin Complex">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Vitamins</span>
+                        <h3>Multivitamin Complex - Men's Health</h3>
+                        <p>Complete daily nutrition for men</p>
+                        <div class="product-price">
+                            <span class="current-price">$24.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card" data-category="personal-care">
+                    <div class="product-image">
+                        <img src="images/product-6.jpg" alt="Face Masks">
+                    </div>
+                    <div class="product-badge">Sale</div>
+                    <div class="product-info">
+                        <span class="product-category">Personal Care</span>
+                        <h3>Disposable Face Masks - 50 Pack</h3>
+                        <p>3-ply protective masks, comfortable fit</p>
+                        <div class="product-price">
+                            <span class="current-price">$12.99</span>
+                            <span class="original-price">$16.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 7 -->
+                <article class="product-card" data-category="medical">
+                    <div class="product-image">
+                        <img src="images/product-7.jpg" alt="Digital Thermometer">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Medical Devices</span>
+                        <h3>Digital Thermometer - Fast Reading</h3>
+                        <p>Accurate temperature reading in 10 seconds</p>
+                        <div class="product-price">
+                            <span class="current-price">$15.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <!-- Product 8 -->
+                <article class="product-card" data-category="supplements">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/product-8.jpg" alt="Omega-3 Fish Oil">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Supplements</span>
+                        <h3>Omega-3 Fish Oil - 1000mg - 90 Softgels</h3>
+                        <p>Heart health and brain function support</p>
+                        <div class="product-price">
+                            <span class="current-price">$22.99</span>
+                        </div>
+                        <button class="btn-add-cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more">
+                <button class="btn btn-outline">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Medi<span class="highlight">Care</span></span>
+                    </a>
+                    <p>Your trusted partner in health and wellness since 2010.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Prescription Filling</a></li>
+                        <li><a href="#">Health Consultations</a></li>
+                        <li><a href="#">Vaccinations</a></li>
+                        <li><a href="#">Home Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Kabul</li>
+                        <li><i class="fas fa-phone"></i> +93 789 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@medicare-pharmacy.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediCare Pharmacy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
