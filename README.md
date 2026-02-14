@@ -4,7 +4,7 @@ A professional, responsive pharmacy website built with HTML, CSS, and JavaScript
 
 ## 🌐 Live Demo
 
-[MediCare Pharmacy](https://medicare-pharmacy-demo.netlify.app)
+[MediCare Pharmacy](https://haroonrashidzadran.github.io/Pharamcy-Website/)
 
 ---
 
