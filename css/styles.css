@@ -1940,6 +1940,92 @@ h4 { font-size: 1.25rem; }
     box-shadow: var(--shadow-md);
 }
 
+/* ==============================
+   Responsive Styles
+   ============================== */
+
+/* About Section Responsive */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-images {
+        order: -1;
+    }
+    
+    .about-img-secondary {
+        width: 150px;
+        bottom: -20px;
+        right: -20px;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-preview {
+        padding: 60px 0;
+    }
+    
+    .about-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .about-img-secondary {
+        display: none;
+    }
+}
+
+/* Testimonials Responsive */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 60px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        padding: 25px;
+    }
+}
+
+/* CTA Responsive */
+@media (max-width: 768px) {
+    .cta {
+        padding: 60px 0;
+    }
+    
+    .cta h2 {
+        font-size: 2rem;
+    }
+    
+    .cta p {
+        font-size: 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta .btn-primary,
+    .cta .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
+
 /* Footer Responsive */
 @media (max-width: 1200px) {
     .footer-main {
