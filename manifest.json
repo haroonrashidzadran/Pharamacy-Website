@@ -1,0 +1,39 @@
+{
+  "name": "MediCare Pharmacy",
+  "short_name": "MediCare",
+  "description": "Your trusted health partner. Quality medicines, healthcare products, and professional pharmaceutical services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2ecc71",
+  "theme_color": "#2ecc71",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "health", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "url": "/services.html",
+      "description": "View our pharmacy services"
+    },
+    {
+      "name": "Products",
+      "short_name": "Products",
+      "url": "/products.html",
+      "description": "Browse our products"
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "url": "/contact.html",
+      "description": "Get in touch with us"
+    }
+  ]
+}
