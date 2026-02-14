@@ -2316,6 +2316,73 @@ h4 { font-size: 1.25rem; }
 .rounded-lg { border-radius: var(--border-radius-lg); }
 .rounded-circle { border-radius: 50%; }
 
+/* ==============================
+   Image Styles
+   ============================== */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-thumbnail {
+    padding: 5px;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* ==============================
+   Icon Styles
+   ============================== */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.icon-box:hover {
+    transform: rotate(360deg);
+    box-shadow: var(--shadow-md);
+}
+
+.icon-box-sm {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.icon-box-lg {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+}
+
 /* Footer Responsive */
 @media (max-width: 1200px) {
     .footer-main {
