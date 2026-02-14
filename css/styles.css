@@ -2032,8 +2032,6 @@ h4 { font-size: 1.25rem; }
 
 /* About Section Animations */
 .about-preview {
-    opacity: 0;
-    transform: translateY(30px);
     transition: all 0.6s ease-out;
 }
 
@@ -2076,8 +2074,6 @@ h4 { font-size: 1.25rem; }
 
 /* Testimonials Animations */
 .testimonials {
-    opacity: 0;
-    transform: translateY(30px);
     transition: all 0.6s ease-out;
 }
 
@@ -2087,10 +2083,7 @@ h4 { font-size: 1.25rem; }
 }
 
 .testimonial-card {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease forwards;
-}
+    }
 
 .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
 .testimonial-card:nth-child(2) { animation-delay: 0.2s; }
@@ -2117,8 +2110,6 @@ h4 { font-size: 1.25rem; }
 
 /* CTA Animations */
 .cta {
-    opacity: 0;
-    transform: translateY(30px);
     transition: all 0.6s ease-out;
 }
 
@@ -2128,20 +2119,17 @@ h4 { font-size: 1.25rem; }
 }
 
 .cta h2 {
-    animation: slideInLeft 0.6s ease forwards;
-}
+    }
 
 .cta p {
     animation: slideInRight 0.6s ease forwards;
     animation-delay: 0.2s;
-    opacity: 0;
-}
+    }
 
 .cta-buttons {
     animation: fadeInUp 0.6s ease forwards;
     animation-delay: 0.4s;
-    opacity: 0;
-}
+    }
 
 @keyframes slideInLeft {
     from {
@@ -2609,3 +2597,5 @@ h4 { font-size: 1.25rem; }
  } 
  
  
+
+
