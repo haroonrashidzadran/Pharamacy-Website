@@ -2165,6 +2165,103 @@ h4 { font-size: 1.25rem; }
     }
 }
 
+/* ==============================
+   Enhanced Card Effects
+   ============================== */
+
+/* Enhanced About Card */
+.about-preview {
+    position: relative;
+}
+
+.about-preview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    background-size: 200% 100%;
+    animation: gradientMove 3s ease infinite;
+}
+
+@keyframes gradientMove {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.about-content {
+    position: relative;
+}
+
+.about-content::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Enhanced Testimonial Cards */
+.testimonial-card {
+    border-left: 4px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover::after {
+    transform: scaleX(1);
+}
+
+.testimonial-author img {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-author:hover img {
+    transform: scale(1.1);
+}
+
+/* Enhanced CTA */
+.cta {
+    text-align: center;
+}
+
+.cta h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.cta h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
 /* Footer Responsive */
 @media (max-width: 1200px) {
     .footer-main {
