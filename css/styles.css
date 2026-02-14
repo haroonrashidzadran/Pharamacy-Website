@@ -848,7 +848,7 @@ h4 { font-size: 1.25rem; }
    Page Banner Styles
    ============================== */
 .page-banner {
-    padding: 150px 0 80px;
+    padding: 100px 0 40px;
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     text-align: center;
     margin-top: 80px;
@@ -856,21 +856,33 @@ h4 { font-size: 1.25rem; }
 
 .page-banner h1 {
     color: var(--text-white);
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
-.page-banner p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1rem;
+.page-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.page-banner p a {
+.page-breadcrumb a {
     color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
 }
 
-.page-banner p a:hover {
-    text-decoration: underline;
+.page-breadcrumb a:hover {
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.page-breadcrumb span {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* ==============================
@@ -1495,5 +1507,6 @@ h4 { font-size: 1.25rem; }
          . s e r v i c e - d e t a i l e d - c a r d   { 
                  p a d d i n g :   3 0 p x   2 5 p x ; 
          } 
- }  
+ } 
+ 
  
