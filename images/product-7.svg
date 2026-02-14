@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect fill="#ffebee" width="300" height="300"/>
+  <text x="150" y="140" font-family="Arial" font-size="14" fill="#c62828" text-anchor="middle">Digital Thermometer</text>
+  <text x="150" y="200" font-family="Arial" font-size="40" fill="#ef5350">🌡️</text>
+</svg>

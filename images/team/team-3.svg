@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect fill="#e3f2fd" width="200" height="200"/>
+  <circle cx="100" cy="80" r="35" fill="#2196f3" opacity="0.3"/>
+  <ellipse cx="100" cy="160" rx="50" ry="40" fill="#2196f3" opacity="0.3"/>
+  <text x="100" y="85" font-family="Arial" font-size="30" fill="#1565c0" text-anchor="middle">👨‍💼</text>
+</svg>

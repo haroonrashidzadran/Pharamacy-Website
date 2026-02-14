@@ -354,6 +354,32 @@ function initEventListeners() {
         });
     });
     
+    // Product filter buttons
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                filterProducts(filter);
+            });
+        });
+    }
+    
+    // Contact form submission
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            showNotification('Message sent successfully! We will contact you soon.');
+            this.reset();
+        });
+    }
+    
     // Header scroll
     window.addEventListener('scroll', handleScroll);
     
@@ -362,6 +388,22 @@ function initEventListeners() {
         if (e.key === 'Escape' && navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
             navToggle.focus();
+        }
+    });
+}
+
+// Product filtering functionality
+function filterProducts(category) {
+    const products = document.querySelectorAll('.product-card');
+    
+    products.forEach(product => {
+        const productCategory = product.getAttribute('data-category');
+        
+        if (category === 'all' || productCategory === category) {
+            product.style.display = 'block';
+            product.style.animation = 'fadeInUp 0.5s ease forwards';
+        } else {
+            product.style.display = 'none';
         }
     });
 }

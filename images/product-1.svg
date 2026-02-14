@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect fill="#e8f5e9" width="400" height="400"/>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="16" fill="#2e7d32" text-anchor="middle">Vitamin D3</text>
+  <circle cx="200" cy="240" r="60" fill="#4caf50" opacity="0.3"/>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="40" fill="#2e7d32" text-anchor="middle">💊</text>
+</svg>

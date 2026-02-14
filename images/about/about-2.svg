@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect fill="#e3f2fd" width="400" height="400"/>
+  <circle cx="200" cy="150" r="60" fill="#2196f3" opacity="0.2"/>
+  <rect x="140" y="200" width="120" height="150" rx="20" fill="#2196f3" opacity="0.2"/>
+  <text x="200" y="280" font-family="Arial" font-size="30" fill="#1565c0" text-anchor="middle">👨‍⚕️</text>
+  <text x="200" y="330" font-family="Arial" font-size="14" fill="#1565c0" text-anchor="middle">Pharmacist Consultation</text>
+</svg>
