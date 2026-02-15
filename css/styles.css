@@ -3868,3 +3868,23 @@ a:focus:not(:focus-visible) {
         padding: 0;
     }
 }
+
+/* ==============================
+   High Contrast Mode Support
+   ============================== */
+
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #000;
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+    
+    .service-detailed-card,
+    .contact-info-card,
+    .contact-form-card {
+        border: 2px solid #000;
+    }
+}
