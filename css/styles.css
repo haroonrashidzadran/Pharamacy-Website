@@ -4079,3 +4079,17 @@ a:focus:not(:focus-visible) {
 .form-group textarea:focus::placeholder {
     color: var(--primary-color);
 }
+
+/* ==============================
+   Subtle Background Pattern
+   ============================== */
+
+.services-detailed {
+    background-image: radial-gradient(circle at 20% 80%, rgba(46, 204, 113, 0.03) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, rgba(52, 152, 219, 0.03) 0%, transparent 50%);
+}
+
+.contact-section {
+    background-image: radial-gradient(circle at 80% 80%, rgba(46, 204, 113, 0.03) 0%, transparent 50%),
+                      radial-gradient(circle at 20% 20%, rgba(52, 152, 219, 0.03) 0%, transparent 50%);
+}
