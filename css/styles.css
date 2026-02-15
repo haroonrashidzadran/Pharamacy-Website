@@ -3727,3 +3727,28 @@ h4 { font-size: 1.25rem; }
 .form-group input:focus ~ .input-icon {
     color: var(--primary-color);
 }
+
+/* ==============================
+   Footer Social Icons Hover
+   ============================== */
+
+.footer-social a {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-social a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover::after {
+    opacity: 1;
+}
