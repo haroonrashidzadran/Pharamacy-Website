@@ -3488,3 +3488,40 @@ h4 { font-size: 1.25rem; }
         font-size: 1.2rem;
     }
 }
+
+/* ==============================
+   Small Improvements - Form Validation & Accessibility
+   ============================== */
+
+/* Form validation styles */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+    border-color: #e74c3c;
+}
+
+.form-group input.success,
+.form-group select.success,
+.form-group textarea.success {
+    border-color: #27ae60;
+}
+
+/* Focus visible for accessibility */
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Improved textarea resize handle */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Smooth form transitions */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
