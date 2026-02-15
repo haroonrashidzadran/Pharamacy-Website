@@ -3752,3 +3752,24 @@ h4 { font-size: 1.25rem; }
 .footer-social a:hover::after {
     opacity: 1;
 }
+
+/* ==============================
+   Scrollbar Styling
+   ============================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
