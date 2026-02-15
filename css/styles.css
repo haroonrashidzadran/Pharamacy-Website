@@ -3566,3 +3566,26 @@ h4 { font-size: 1.25rem; }
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.2); }
 }
+
+/* ==============================
+   Footer Enhancement - Hover Effects
+   ============================== */
+
+.footer-links-col ul li a {
+    position: relative;
+}
+
+.footer-links-col ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.footer-links-col ul li a:hover::before {
+    width: 100%;
+}
