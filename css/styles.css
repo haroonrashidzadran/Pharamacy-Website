@@ -3700,3 +3700,30 @@ h4 { font-size: 1.25rem; }
         transform: translateY(0);
     }
 }
+
+/* ==============================
+   Contact Form Input Icons
+   ============================== */
+
+.form-group {
+    position: relative;
+}
+
+.form-group input {
+    padding-left: 45px;
+}
+
+.form-group .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: color 0.3s ease;
+}
+
+.form-group input:focus ~ .input-icon {
+    color: var(--primary-color);
+}
