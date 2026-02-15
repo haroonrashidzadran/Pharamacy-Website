@@ -4093,3 +4093,19 @@ a:focus:not(:focus-visible) {
     background-image: radial-gradient(circle at 80% 80%, rgba(46, 204, 113, 0.03) 0%, transparent 50%),
                       radial-gradient(circle at 20% 20%, rgba(52, 152, 219, 0.03) 0%, transparent 50%);
 }
+
+/* ==============================
+   Cursor Pointer for Interactive Elements
+   ============================== */
+
+.filter-btn,
+.wishlist-btn,
+.quick-view-btn,
+.newsletter-form button {
+    cursor: pointer;
+}
+
+.filter-btn:active,
+.btn:active {
+    transform: scale(0.95);
+}
