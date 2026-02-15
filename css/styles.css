@@ -3953,3 +3953,24 @@ a:focus:not(:focus-visible) {
         transform: translateY(0);
     }
 }
+
+/* ==============================
+   Info Item Animation
+   ============================== */
+
+.info-item {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: infoSlide 0.4s ease forwards;
+}
+
+.contact-info-grid .info-item:nth-child(1) { animation-delay: 0.1s; }
+.contact-info-grid .info-item:nth-child(2) { animation-delay: 0.2s; }
+.contact-info-grid .info-item:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes infoSlide {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
