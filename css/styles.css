@@ -3613,3 +3613,24 @@ h4 { font-size: 1.25rem; }
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+/* ==============================
+   Newsletter Form Enhancement
+   ============================== */
+
+.newsletter-form input {
+    transition: all 0.3s ease;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.15);
+}
+
+.newsletter-form button {
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:active {
+    transform: scale(0.95);
+}
