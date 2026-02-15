@@ -3787,3 +3787,24 @@ h4 { font-size: 1.25rem; }
     background: var(--primary-color);
     color: white;
 }
+
+/* ==============================
+   Smooth Image Loading
+   ============================== */
+
+img {
+    loading: lazy;
+}
+
+.product-image img,
+.about-img-main {
+    transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+    opacity: 0;
+}
+
+img[src] {
+    opacity: 1;
+}
