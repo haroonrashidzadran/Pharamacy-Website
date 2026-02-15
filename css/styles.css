@@ -3974,3 +3974,28 @@ a:focus:not(:focus-visible) {
         transform: translateX(0);
     }
 }
+
+/* ==============================
+   Dark Mode Support
+   ============================== */
+
+@media (prefers-color-scheme: dark) {
+    .service-detailed-card,
+    .contact-info-card,
+    .contact-form-card,
+    .product-card {
+        background: #2a2a2a;
+    }
+    
+    .service-content h3,
+    .contact-header h2,
+    .form-header h4 {
+        color: #fff;
+    }
+    
+    .service-content > p,
+    .contact-header p,
+    .form-header p {
+        color: #aaa;
+    }
+}
