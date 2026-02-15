@@ -4065,3 +4065,17 @@ a:focus:not(:focus-visible) {
         transform: scale(1);
     }
 }
+
+/* ==============================
+   Form Placeholder Transition
+   ============================== */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    transition: color 0.3s ease;
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    color: var(--primary-color);
+}
