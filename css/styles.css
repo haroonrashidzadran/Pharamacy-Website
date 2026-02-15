@@ -3525,3 +3525,44 @@ h4 { font-size: 1.25rem; }
 .form-group textarea {
     transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* ==============================
+   Header Enhancement - Scroll Effects
+   ============================== */
+
+/* Header shadow on scroll */
+.header {
+    transition: all 0.3s ease;
+}
+
+.header.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth nav link hover */
+.nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Header actions button hover */
+.header-actions .btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-actions .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Cart button badge pulse */
+.cart-count {
+    animation: none;
+}
+
+.cart-btn:hover .cart-count {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
