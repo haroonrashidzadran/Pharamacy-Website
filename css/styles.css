@@ -3840,3 +3840,31 @@ a:focus:not(:focus-visible) {
         scroll-behavior: auto !important;
     }
 }
+
+/* ==============================
+   Print Styles
+   ============================== */
+
+@media print {
+    .header,
+    .footer,
+    .top-bar,
+    .btn,
+    .header-actions {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
