@@ -3907,3 +3907,25 @@ a:focus:not(:focus-visible) {
 .skip-link:focus {
     top: 0;
 }
+
+/* ==============================
+   Service Features List Animation
+   ============================== */
+
+.service-features li {
+    opacity: 0;
+    transform: translateX(-10px);
+    animation: slideIn 0.3s ease forwards;
+}
+
+.service-detailed-card:nth-child(1) .service-features li:nth-child(1) { animation-delay: 0.1s; }
+.service-detailed-card:nth-child(1) .service-features li:nth-child(2) { animation-delay: 0.2s; }
+.service-detailed-card:nth-child(1) .service-features li:nth-child(3) { animation-delay: 0.3s; }
+.service-detailed-card:nth-child(1) .service-features li:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
