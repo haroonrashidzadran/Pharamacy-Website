@@ -3999,3 +3999,28 @@ a:focus:not(:focus-visible) {
         color: #aaa;
     }
 }
+
+/* ==============================
+   Logo Hover Effect
+   ============================== */
+
+.logo {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo i {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover i {
+    animation: heartbeat 0.6s ease infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
